@@ -22,7 +22,7 @@ const Hero = () => {
               data-aos="fade-up"
               className=" text-5xl font-bold sm:text-[2rem]"
             >
-              Hello, I'm Yassine Oujama
+             Hey There, I'm Yassine Oujamâ
             </h2>
             <TypeAnimation
               data-aos="fade-up"
@@ -30,6 +30,10 @@ const Hero = () => {
                 "Web Developer",
                 2000,
                 "Freelancer",
+                2000,
+                "Software Engineer",
+                2000,
+                "UI/UX Design",
                 2000,
                 "",
               ]}
