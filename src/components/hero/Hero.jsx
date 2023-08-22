@@ -4,11 +4,12 @@ import {
   AiFillGithub,
   AiFillInstagram,
 } from "react-icons/ai";
-import { FaFacebook, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebook, FaLinkedinIn} from "react-icons/fa";
+import { IoLogoWhatsapp} from "react-icons/io";
 import { FiDownload } from "react-icons/fi";
 import { FaPlay } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
-import resumePDF from "../../assets/Resume.pdf";
+import resumePDF from "../../assets/CV_Yassine_Oujama.pdf";
 
 
 const Hero = () => {
@@ -21,7 +22,7 @@ const Hero = () => {
               data-aos="fade-up"
               className=" text-5xl font-bold sm:text-[2rem]"
             >
-              Hello, I'm John  Doe
+              Hello, I'm Yassine Oujama
             </h2>
             <TypeAnimation
               data-aos="fade-up"
@@ -41,15 +42,14 @@ const Hero = () => {
               // data-aos="fade-up"
               className=" text-[1.1rem] font-medium w-3/4 md:w-full text-gray-600 sm:text-[.95rem]"
             >
-              Lorem ipsum dolor sit amet consectetur
+              I Devlop beautiful simple things, And I love what i do !
             </p>
           </div>
           <div data-aos="fade-up" className="buttons flex gap-5">
-            <a
-              href=""
+            <a href="mailto:yassine.oujama@gmail.com"
               className=" bg-black text-[1rem] text-white px-10 py-2 sm:px-8 rounded-lg font-bold  hover:text-yellow-500"
             >
-              <span> Hire Me</span>
+              <span> Contact Me</span>
             </a>
             <a
               href={resumePDF}
@@ -57,7 +57,7 @@ const Hero = () => {
               download
             >
               <div className="flex items-center gap-1">
-                Resume <FiDownload />
+                CV <FiDownload />
               </div>
             </a>
           </div>
@@ -74,27 +74,33 @@ const Hero = () => {
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="https://linkedin.com/in/yassine-oujama">
                   {" "}
                   <FaLinkedinIn className=" h-[1.8rem] w-[1.8rem] text-xl hover:scale-125 " />{" "}
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="https://www.instagram.com/yassine_oujama/">
                   {" "}
                   <AiFillInstagram className=" h-[1.8rem] w-[1.8rem] text-xl hover:scale-125  " />{" "}
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="https://www.facebook.com/yassine.oujamaa.ma">
                   {" "}
                   <FaFacebook className=" h-[1.8rem] w-[1.8rem] text-xl hover:scale-125  " />{" "}
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="https://twitter.com/OujamaYassine">
                   {" "}
                   <AiFillTwitterCircle className=" h-[1.8rem] w-[1.8rem] text-xl hover:scale-125  " />{" "}
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.me/212610994170">
+                  {" "}
+                  <IoLogoWhatsapp className=" h-[1.8rem] w-[1.8rem] text-xl hover:scale-125  " />{" "}
                 </a>
               </li>
             </ul>
@@ -105,7 +111,7 @@ const Hero = () => {
             <img
             data-aos="fade-up"
               className=" h-[90%]  w-full object-cover md:h-[95%] md:m-auto sm:m-0"
-              src='https://i.postimg.cc/pTn61Gr1/Untitled-design222-modified.png'
+              src='person.png'
               // src={mine}
               alt="mine"
             />

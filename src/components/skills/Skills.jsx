@@ -2,7 +2,7 @@ import React from "react";
 import ProgressBar from "../../chip/ProgressBar";
 import SkillBox from "../../chip/SkillBox";
 
-import { IoLogoHtml5, IoLogoCss3 } from "react-icons/io";
+import { IoLogoHtml5, IoLogoCss3, IoLogoPython } from "react-icons/io";
 
 
 import {
@@ -10,10 +10,11 @@ import {
   SiTailwindcss,
   SiMongodb,
   SiExpress,
+  SiMysql,
 } from "react-icons/si";
 import { GrCode } from "react-icons/gr";
-import { SiNextdotjs } from "react-icons/si";
-import { FaReact } from "react-icons/fa";
+import { SiNextdotjs , SiBootstrap } from "react-icons/si";
+import { FaReact , FaPhp , FaLaravel } from "react-icons/fa";
 import { IoLogoNodejs } from "react-icons/io";
 
 const Skills = ({ darkMode }) => {
@@ -42,19 +43,19 @@ const Skills = ({ darkMode }) => {
               className="progress flex items-center h-[100%] justify-end md:justify-center"
             >
               <div className=" flex flex-col gap-6  w-3/4  my-5 md:w-[90%]">
+
                 <ProgressBar logo={<IoLogoHtml5 />} name={"HTML"} value={95} />
                 <ProgressBar logo={<IoLogoCss3 />} name={"CSS"} value={88} />
-                <ProgressBar
-                  logo={<SiJavascript />}
-                  name={"Javascript"}
-                  value={80}
-                />
+                <ProgressBar logo={<SiBootstrap />} name={"BootStrap"} value={75} />
+                <ProgressBar logo={<SiJavascript />} name={"Javascript"} value={85} />
                 <ProgressBar logo={<FaReact />} name={"React Js"} value={80} />
-                <ProgressBar
-                  logo={<SiTailwindcss />}
-                  name={"Tailwind CSS"}
-                  value={80}
-                />
+                <ProgressBar logo={<IoLogoNodejs />} name={"Node Js"} value={70} />
+                <ProgressBar logo={<FaPhp />} name={"Php"} value={80} />
+                <ProgressBar logo={<FaLaravel />} name={"Laravel"} value={90} />
+                <ProgressBar logo={<IoLogoPython />} name={"Python"} value={80} />
+                <ProgressBar logo={<SiMongodb />} name={"MongoDB"} value={85} />
+                <ProgressBar logo={<SiMysql />} name={"MySql"} value={80} />
+                <ProgressBar logo={<SiTailwindcss />} name={"Tailwind CSS"} value={80} />
               </div>
             </div>
           </div>
@@ -73,22 +74,28 @@ const Skills = ({ darkMode }) => {
                 white={"black"}
                 skill={"MongoDB"}
               />
+              <SkillBox
+                logo={<FaLaravel />}
+                black={"white"}
+                white={"black"}
+                skill={"Laravel"}
+              />
             </div>
             <div className="last2 flex flex-col gap-10">
               <SkillBox
-                logo={<SiExpress />}
+                logo={<FaReact />}
                 black={"black"}
                 white={"white"}
-                skill={"Express Js"}
+                skill={"React Js"}
               />
               <SkillBox
                 className=""
                 logo={
-                  <GrCode/>
+                  <IoLogoPython/>
                 }
                 black={"black"}
                 white={"white"}
-                skill={"C++"}
+                skill={"Python"}
               />
               {/* <SkillBox
                 className=""
