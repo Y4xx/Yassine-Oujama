@@ -1,6 +1,9 @@
 import React from "react";
+import { experience , education } from "./data";
 
 const Resume = () => {
+  // const reversedData = [...experience].reverse();
+
   return (
     <div id="resume" className=" container m-auto   mt-16">
       {/* heading */}
@@ -17,11 +20,10 @@ const Resume = () => {
       </div>
       {/* card*/}
       <div className="card-wrapper w-[90%] sm:w-full mt-5 flex md:flex-col sm:gap-5 mx-auto ">
+
         <div className="left flex-1 flex items-center justify-center">
-          <fieldset
-            data-aos="zoom-in"
-            className=" w-[80%] p-5 py-12 sm:py-8 sm:w-full sm:p-2"
-          >
+
+          <fieldset data-aos="zoom-in" className=" w-[80%] p-5 py-12 sm:py-8 sm:w-full sm:p-2">
             <legend className=" w-auto ml-[50%] translate-x-[-50%] border-2 border-gray-200 rounded-3xl py-1 px-8 font-semibold text-xl text-yellow-500">
               Experience
             </legend>
@@ -34,7 +36,30 @@ const Resume = () => {
               </div>
               {/* design */}
               <div className=" flex flex-col gap-1 sm:gap-1 border-2 border-yellow-400 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg">
-                <h1 className="text-[1.4rem] font-semibold sm:text-xl">
+                
+              {experience.map((data) => {
+              return(
+                <div key={data.id}>
+                  <h1 className="text-[1.4rem] font-semibold sm:text-xl">
+                  {data.title}
+                  </h1>
+                  <span className=" text-[.9rem] font-semibold text-gray-500 sm:text-base">
+                  {data.companyName}
+                  </span><br />
+                  <span className=" text-[.9rem] font-semibold text-yellow-500 sm:text-base">
+                  {data.date}
+                  </span>
+                  <p className=" text-[.9rem] text-justify break-words text-gray-500">
+                  {data.description}
+                  </p>
+                  <br />
+                </div>
+              )
+              
+              })}
+
+
+                {/* <h1 className="text-[1.4rem] font-semibold sm:text-xl">
                   Software Developer
                 </h1>
                 <span className=" text-[.9rem] font-semibold text-gray-500 sm:text-base">
@@ -50,11 +75,18 @@ const Resume = () => {
                   autem doloribus deserunt qui, laborum incidunt amet, numquam
                   eos cum tempora. Debitis, esse quae corporis deserunt officia
                   quos in a, quaerat vero odio vitae.
-                </p>
+                </p> */}
+
+
+
+
               </div>
             </div>
           </fieldset>
+          
         </div>
+
+        
         <div className="right flex-1 flex items-center justify-center">
           <fieldset
             data-aos="zoom-in"
@@ -72,23 +104,29 @@ const Resume = () => {
               </div>
               {/* design */}
               <div className=" flex flex-col gap-1 border-2 border-yellow-400 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg">
-                <h1 className="text-[1.4rem] font-semibold sm:text-xl">
-                  B.Tech, Computer Science
-                </h1>
-                <span className=" text-[.9rem] font-semibold text-gray-500 sm:text-base">
-                  College Name
-                </span>
-                <span className=" text-[.9rem] font-semibold text-yellow-500 sm:text-base">
-                  Year 2023 - Year 2027
-                </span>
-                <p className=" text-[.9rem] text-justify text-gray-500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Excepturi nihil aut quae obcaecati alias placeat totam aperiam
-                  pariatur quam? Accusantium minima aperiam error obcaecati
-                  autem doloribus deserunt qui, laborum incidunt amet, numquam
-                  eos cum tempora. Debitis, esse quae corporis deserunt officia
-                  quos in a, quaerat vero odio vitae.
-                </p>
+
+              {education.map((data) => {
+              return(
+                <div key={data.id}>
+                  <h1 className="text-[1.4rem] font-semibold sm:text-xl">
+                  {data.title}
+                  </h1>
+                  <span className=" text-[.9rem] font-semibold text-gray-500 sm:text-base">
+                  {data.companyName}
+                  </span><br />
+                  <span className=" text-[.9rem] font-semibold text-yellow-500 sm:text-base">
+                  {data.date}
+                  </span>
+                  <p className=" text-[.9rem] text-justify break-words text-gray-500">
+                  {data.description}
+                  </p>
+                  <br />
+                </div>
+              )
+              
+              })}
+
+
               </div>
             </div>
           </fieldset>
