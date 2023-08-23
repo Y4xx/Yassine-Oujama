@@ -49,11 +49,12 @@ const Skills = ({ darkMode }) => {
                 <ProgressBar logo={<SiBootstrap />} name={"BootStrap"} value={75} />
                 <ProgressBar logo={<SiJavascript />} name={"Javascript"} value={85} />
                 <ProgressBar logo={<FaReact />} name={"React Js"} value={80} />
+                <ProgressBar logo={<SiNextdotjs />} name={"Next Js"} value={75} />
                 <ProgressBar logo={<IoLogoNodejs />} name={"Node Js"} value={70} />
                 <ProgressBar logo={<FaPhp />} name={"Php"} value={80} />
-                <ProgressBar logo={<FaLaravel />} name={"Laravel"} value={90} />
+                <ProgressBar logo={<FaLaravel />} name={"Laravel"} value={95} />
                 <ProgressBar logo={<IoLogoPython />} name={"Python"} value={80} />
-                <ProgressBar logo={<SiMongodb />} name={"MongoDB"} value={85} />
+                <ProgressBar logo={<SiMongodb />} name={"MongoDB"} value={90} />
                 <ProgressBar logo={<SiMysql />} name={"MySql"} value={80} />
                 <ProgressBar logo={<SiTailwindcss />} name={"Tailwind CSS"} value={80} />
               </div>
@@ -96,6 +97,15 @@ const Skills = ({ darkMode }) => {
                 black={"black"}
                 white={"white"}
                 skill={"Python"}
+              />
+              <SkillBox
+                className=""
+                logo={
+                  <SiNextdotjs/>
+                }
+                black={"black"}
+                white={"white"}
+                skill={"Next Js"}
               />
               {/* <SkillBox
                 className=""
