@@ -27,8 +27,16 @@ export const experience = [
     
 ];
 export const education = [
+  {
+    id: 1,
+    title : "Professional License LDW",
+    companyName:"ENS Tétouan",
+    date:'Oct 2023 - Jun 2024' ,
+    description :"Software and Web Development training provides comprehensive expertise, from mastering Java and PHP and other frameworks  like JEE and Symfony, to designing n-tier architectures. It prepares individuals to design and manage professional applications using best development practices and modern web technologies." ,
+  
+  },
     {
-      id: 1,
+      id: 2,
       title : "ALX Software Engineering.",
       companyName:"ALX",
       date:'Aug 2023 - Sep 2024' ,
@@ -36,7 +44,7 @@ export const education = [
     
     },
     {
-      id: 2,
+      id: 3,
       title : "Digital Development Diploma, Option Web Full stack.",
       companyName:"ISTA",
       date:'Aug 2021 - Sep 2023' ,
@@ -44,7 +52,7 @@ export const education = [
     
     },
     {
-      id: 3,
+      id: 4,
       title : "International Baccalaureate in Experimental Sciences, Physical Sciences option",
       companyName:"High School",
       date:'Aug 2020 - Sep 2021' ,

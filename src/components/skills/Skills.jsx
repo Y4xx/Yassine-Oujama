@@ -2,7 +2,7 @@ import React from "react";
 import ProgressBar from "../../chip/ProgressBar";
 import SkillBox from "../../chip/SkillBox";
 
-import { IoLogoHtml5, IoLogoCss3, IoLogoPython } from "react-icons/io";
+import { IoLogoHtml5, IoLogoCss3, IoLogoPython} from "react-icons/io";
 
 
 import {
@@ -14,7 +14,7 @@ import {
 } from "react-icons/si";
 import { GrCode } from "react-icons/gr";
 import { SiNextdotjs , SiBootstrap } from "react-icons/si";
-import { FaReact , FaPhp , FaLaravel } from "react-icons/fa";
+import { FaReact , FaPhp , FaLaravel , FaJava , FaSymfony  } from "react-icons/fa";
 import { IoLogoNodejs } from "react-icons/io";
 
 const Skills = ({ darkMode }) => {
@@ -54,6 +54,9 @@ const Skills = ({ darkMode }) => {
                 <ProgressBar logo={<FaPhp />} name={"Php"} value={80} />
                 <ProgressBar logo={<FaLaravel />} name={"Laravel"} value={95} />
                 <ProgressBar logo={<IoLogoPython />} name={"Python"} value={80} />
+                <ProgressBar logo={<FaJava />} name={"Java"} value={70} />
+                <ProgressBar logo={<FaJava />} name={"JEE"} value={72} />
+                <ProgressBar logo={<FaSymfony />} name={"Symfony"} value={75} />
                 <ProgressBar logo={<SiMongodb />} name={"MongoDB"} value={90} />
                 <ProgressBar logo={<SiMysql />} name={"MySql"} value={80} />
                 <ProgressBar logo={<SiTailwindcss />} name={"Tailwind CSS"} value={80} />
