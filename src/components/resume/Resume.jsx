@@ -19,23 +19,23 @@ const Resume = () => {
         </p>
       </div>
       {/* card*/}
-      <div className="card-wrapper w-[90%] sm:w-full mt-5 flex md:flex-col sm:gap-5 mx-auto ">
+      <div className="card-wrapper w-full sm:w-full mt-5 flex md:flex-col sm:gap-5 mx-auto">
 
-        <div className="left flex-1 flex items-center justify-center">
+        <div className=" left flex-1 flex items-start justify-center">
 
-          <fieldset data-aos="zoom-in" className=" w-[80%] p-5 py-12 sm:py-8 sm:w-full sm:p-2">
-            <legend className=" w-auto ml-[50%] translate-x-[-50%] border-2 border-gray-200 rounded-3xl py-1 px-8 font-semibold text-xl text-yellow-500">
+          <fieldset data-aos="zoom-in" className=" w-full p-5 py-12 sm:py-8 sm:w-full sm:p-2">
+            <legend className=" w-auto ml-[50%] translate-x-[-50%] border-2 border-gray-200 rounded-3xl py-1 px-8 font-semibold text-xl text--500">
               Experience
             </legend>
             <div className=" relative">
               {/* design */}
-              <div className="design flex absolute left-[-150px] top-1/2 items-center rotate-[90deg] sm:left-[-160px] ">
-                <div className="c1 w-[12px] h-[12px] rounded-full bg-white border-2 border-yellow-500"></div>
+              {/* <div className="design flex absolute left-[-150px] top-1/2 items-center rotate-[90deg] sm:left-[-160px] ">
+                <div className="c1 w-[12px] h-[12px] rounded-full bg-white border-2 border-black"></div>
                 <div className="line w-[230px] bg-gray-300 h-[2px] sm:w-[250px]"></div>
-                <div className="c2 w-[12px] h-[12px] rounded-full bg-white border-2 border-yellow-500"></div>
-              </div>
+                <div className="c2 w-[12px] h-[12px] rounded-full bg-white border-2 border-black"></div>
+              </div> */}
               {/* design */}
-              <div className=" flex flex-col gap-1 sm:gap-1 border-2 border-yellow-400 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg">
+              <div className=" flex flex-col gap-1 sm:gap-1 border-2 border-black shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg">
                 
               {experience.map((data) => {
               return(
@@ -43,10 +43,10 @@ const Resume = () => {
                   <h1 className="text-[1.4rem] font-semibold sm:text-xl">
                   {data.title}
                   </h1>
-                  <span className=" text-[.9rem] font-semibold text-gray-500 sm:text-base">
+                  <span className=" text-[.9rem] font-semibold text-gray-700 sm:text-base">
                   {data.companyName}
                   </span><br />
-                  <span className=" text-[.9rem] font-semibold text-yellow-500 sm:text-base">
+                  <span className=" text-[.9rem] font-semibold text-gray-500 sm:text-base">
                   {data.date}
                   </span>
                   <p className=" text-[.9rem] text-justify break-words text-gray-500">
@@ -57,29 +57,6 @@ const Resume = () => {
               )
               
               })}
-
-
-                {/* <h1 className="text-[1.4rem] font-semibold sm:text-xl">
-                  Software Developer
-                </h1>
-                <span className=" text-[.9rem] font-semibold text-gray-500 sm:text-base">
-                  Company Name
-                </span>
-                <span className=" text-[.9rem] font-semibold text-yellow-500 sm:text-base">
-                  June 2023 - Present
-                </span>
-                <p className=" text-[.9rem] text-justify break-words text-gray-500">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Excepturi nihil aut quae obcaecati alias placeat totam aperiam
-                  pariatur quam? Accusantium minima aperiam error obcaecati
-                  autem doloribus deserunt qui, laborum incidunt amet, numquam
-                  eos cum tempora. Debitis, esse quae corporis deserunt officia
-                  quos in a, quaerat vero odio vitae.
-                </p> */}
-
-
-
-
               </div>
             </div>
           </fieldset>
@@ -87,23 +64,23 @@ const Resume = () => {
         </div>
 
         
-        <div className="right flex-1 flex items-center justify-center">
+        <div className="right flex-1 flex items-start justify-center">
           <fieldset
             data-aos="zoom-in"
-            className=" w-[80%] p-5 py-12 sm:py-8 sm:w-full sm:p-2"
+            className=" w-full p-5 py-12 sm:py-8 sm:w-full sm:p-2"
           >
-            <legend className=" w-auto ml-[50%] translate-x-[-50%] border-2 border-gray-200 rounded-3xl py-1 px-8 font-semibold text-xl text-yellow-500">
+            <legend className=" w-auto ml-[50%] translate-x-[-50%] border-2 border-gray-200 rounded-3xl py-1 px-8 font-semibold text-xl text-black">
               Education
             </legend>
             <div className=" relative">
               {/* design */}
-              <div className="design flex absolute left-[-150px] top-1/2 items-center rotate-[90deg] sm:left-[-160px] ">
-                <div className="c1 w-[12px] h-[12px] rounded-full bg-white border-2 border-yellow-500"></div>
+              {/* <div className="design flex absolute left-[-150px] top-1/2 items-center rotate-[90deg] sm:left-[-160px] ">
+                <div className="c1 w-[12px] h-[12px] rounded-full bg-white border-2 border-black"></div>
                 <div className="line w-[230px] bg-gray-300 h-[2px] sm:w-[250px]"></div>
-                <div className="c2 w-[12px] h-[12px] rounded-full bg-white border-2 border-yellow-500"></div>
-              </div>
+                <div className="c2 w-[12px] h-[12px] rounded-full bg-white border-2 border-black"></div>
+              </div> */}
               {/* design */}
-              <div className=" flex flex-col gap-1 border-2 border-yellow-400 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg">
+              <div className=" flex flex-col gap-1 border-2 border-black shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg">
 
               {education.map((data) => {
               return(
@@ -111,10 +88,10 @@ const Resume = () => {
                   <h1 className="text-[1.4rem] font-semibold sm:text-xl">
                   {data.title}
                   </h1>
-                  <span className=" text-[.9rem] font-semibold text-gray-500 sm:text-base">
+                  <span className=" text-[.9rem] font-semibold text-gray-700 sm:text-base">
                   {data.companyName}
                   </span><br />
-                  <span className=" text-[.9rem] font-semibold text-yellow-500 sm:text-base">
+                  <span className=" text-[.9rem] font-semibold text-gray-500 sm:text-base">
                   {data.date}
                   </span>
                   <p className=" text-[.9rem] text-justify break-words text-gray-500">

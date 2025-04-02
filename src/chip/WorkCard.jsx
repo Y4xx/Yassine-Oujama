@@ -18,7 +18,7 @@ const WorkCard = () => {
             className="flex flex-col justify-center items-center gap-4"
           >
             <POPUP className="img-content relative">
-              <div className="h-[280px] w-[380px] hover:scale-125 transition duration-500 cursor-pointer shadow-xl rounded-md overflow-hidden sm:h-[260px] sm:w-[92%] sm:bg-cover mx-auto ">
+              <div className="h-[250px] w-[350px] hover:scale-125 transition duration-500 cursor-pointer shadow-xl rounded-md overflow-hidden sm:h-[260px] sm:w-[92%] sm:bg-cover mx-auto ">
                 <img
                   src={data.img}
                   alt={data.title}
@@ -27,7 +27,7 @@ const WorkCard = () => {
               </div>
 
               <div
-                className={` popup w-full  h-[280px] shadow-xl rounded-md overflow-hidden sm:h-[260px] sm:w-[92%] p-4`}
+                className={` popup w-full  h-[250px] shadow-xl rounded-md overflow-hidden sm:h-[260px] sm:w-[92%] p-4`}
               >
                 <p className=" text-gray-900 text-base leading-[1.4] text-justify w-[90%]">
                   {data.desc}
@@ -36,12 +36,12 @@ const WorkCard = () => {
                   <Link
                     to={data.link}
                     target="_blank"
-                    className="  mt-3 rounded-md shadow-md p-1 px-2 flex gap-2 items-center justify-center font-medium"
+                    className="  mt-3  p-1 px-2 flex gap-2 items-center justify-center font-medium"
                   >
-                    <RxExternalLink className=" text-black bg-white rounded-full border  w-[35px] h-[35px] p-2" />
-                    <p className=" text-black">Demo</p>
+                    <RxExternalLink />
+                    {/* <p className=" text-black">Demo</p> */}
                   </Link>
-                  <br className="w-[2px] bg-white" />
+                  {/* <br className="w-[2px] bg-white" />
                   <Link
                     to={data.git}
                     target="_blank"
@@ -49,7 +49,7 @@ const WorkCard = () => {
                   >
                     <AiOutlineGithub className="  text-black bg-white rounded-full border  w-[35px] h-[35px] p-2" />
                     <p className=" text-black">Code</p>
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </POPUP>
@@ -82,7 +82,7 @@ const POPUP = styled.div`
     margin: auto;
     transition: 0.5s ease;
     background: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
     display: flex;
     align-items: center;
     justify-content: center;

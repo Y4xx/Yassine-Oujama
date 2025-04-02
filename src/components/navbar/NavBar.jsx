@@ -51,18 +51,17 @@ const NavBar = ({ toggleDarkMode, darkMode }) => {
 
   return (
     <div
-      className={`w-full mx-auto  fixed top-0 py-5 sm:py-4 z-30 ${
-        scrollPosition > 0 ? `bg-white shadow-md` : "bg-transparent"
+      className={`w-full fixed top-0 py-5 sm:py-4 z-30 ${
+        scrollPosition > 0 ? ` shadow-lg rounded-b-3xl backdrop-blur ` : "bg-transparent"
       } `}
     >
-      <nav className=" container m-auto flex items-center justify-between">
+      <nav className="container m-auto flex items-center justify-between">
         <div data-aos="fade-down" className="logo">
           <Link
             onClick={() => window.scrollTo(0, 0)}
-            to="/"
             className="text-3xl font-bold sm:text-3xl"
           >
-            Yassine Oujama.
+            OUJAMA Yassine.
           </Link>
         </div>
         <div
@@ -97,8 +96,8 @@ const NavBar = ({ toggleDarkMode, darkMode }) => {
                 <a
                   onClick={() => toggleNav(item.name)}
                   href={`#${item.name}`}
-                  className={`uppercase cursor-pointer text-black hover:text-yellow-600 font-bold ${
-                    item.name === activeIndex ? "text-yellow-600" : ""
+                  className={`uppercase cursor-pointer text-black hover:text-gray-600 font-bold ${
+                    item.name === activeIndex ? "text-gray-600" : ""
                   }`}
                 >
                   {item.name}
@@ -107,7 +106,7 @@ const NavBar = ({ toggleDarkMode, darkMode }) => {
             ))}
             <a
               href="mailto:yassine.oujama@gmail.com"
-              className="bg-black text-[1rem] text-white px-8 py-2 rounded-lg font-bold hover:text-yellow-400 md:m-5 md:block md:mx-auto md:w-fit lg:px-3"
+              className="bg-black text-[1rem] text-white px-8 py-2 rounded-lg font-bold hover:text-gray-100 md:m-5 md:block md:mx-auto md:w-fit lg:px-3"
             >
               HIRE ME
             </a>

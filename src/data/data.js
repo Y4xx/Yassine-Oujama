@@ -32,10 +32,10 @@ export const data = [
   },
   {
     id: 5,
-    img: 'showCase5.png',
-    title: "Beauty E-commerce WebSite",
+    img: 'dispo-01.png',
+    title: "Dispo.work | Applicant Tracking System",
     desc: "",
-    link: "",
+    link: "https://dispo.dispo-demo.work/",
     git: "",
   }
   
