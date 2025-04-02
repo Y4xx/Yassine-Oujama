@@ -20,8 +20,8 @@ import { IoLogoNodejs } from "react-icons/io";
 
 const Skills = ({ darkMode }) => {
   return (
-    <div id="skills">
-      <div className=" container m-auto  mt-16">
+    <div id="skills"> 
+      <div className=" container m-auto  mt-16 items-center">
         {/* heading */}
         <div data-aos="fade-up" className="relative mb-5">
           <h3 className=" text-3xl font-black text-gray-400 sm:text-2xl">
@@ -31,7 +31,7 @@ const Skills = ({ darkMode }) => {
         </div>
         {/* content*/}
         {/* right box */}
-        <div className="grid grid-cols-4 flex-col gap-10">
+        <div className="grid grid-cols-4 sm:grid-cols-2 flex-col gap-10">
           <SkillBox
             logo={<IoLogoNodejs />}
             black={"white"}
