@@ -52,7 +52,7 @@ const NavBar = ({ toggleDarkMode, darkMode }) => {
   return (
     <div
       className={`w-full fixed top-0 py-5 sm:py-4 z-30 ${
-        scrollPosition > 0 ? ` shadow-lg rounded-b-3xl backdrop-blur ` : "bg-transparent"
+        scrollPosition > 0 ? ` shadow-lg rounded-b-xl backdrop-blur ` : "bg-transparent"
       } `}
     >
       <nav className="container m-auto flex items-center justify-between">
@@ -61,7 +61,7 @@ const NavBar = ({ toggleDarkMode, darkMode }) => {
             onClick={() => window.scrollTo(0, 0)}
             className="text-3xl font-bold sm:text-3xl"
           >
-            OUJAMA Yassine.
+            Yassine OUJAMA.
           </Link>
         </div>
         <div

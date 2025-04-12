@@ -27,11 +27,13 @@ const Hero = () => {
             <TypeAnimation
               data-aos="fade-up"
               sequence={[
+                "Software Engineer",
+                2000,
                 "Web Developer",
                 2000,
-                "Freelancer",
+                "Problem Solver",
                 2000,
-                "Software Engineer",
+                "Freelancer",
                 2000,
                 "UI/UX Design",
                 2000,
@@ -81,18 +83,6 @@ const Hero = () => {
                 <a href="https://linkedin.com/in/yassine-oujama">
                   {" "}
                   <FaLinkedinIn className=" h-[1.8rem] w-[1.8rem] text-xl hover:scale-125 " />{" "}
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/yassine_oujama/" target="_blanc">
-                  {" "}
-                  <AiFillInstagram className=" h-[1.8rem] w-[1.8rem] text-xl hover:scale-125  " />{" "}
-                </a>
-              </li>
-              <li>
-                <a href="https://www.facebook.com/yassine.oujamaa.ma">
-                  {" "}
-                  <FaFacebook className=" h-[1.8rem] w-[1.8rem] text-xl hover:scale-125  " />{" "}
                 </a>
               </li>
               <li>

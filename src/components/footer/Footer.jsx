@@ -1,10 +1,13 @@
 import React from "react";
 import { FaLinkedinIn } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
-import { RiInstagramFill } from "react-icons/ri";
+import { AiFillGithub } from "react-icons/ai";
 
 
 const Footer = () => {
+
+  const year = new Date().getFullYear();
+
   return (
     <div id="works" className="mx-auto m-auto h-[300px]  mt-16 sm:h-[250px]">
       <div className=" bg-black h-full flex flex-col gap-8 items-center justify-between p-10 sm:p-7 rounded-t-2xl">
@@ -36,15 +39,15 @@ const Footer = () => {
           <a 
           data-aos="fade-up" data-aos-duration="1400"
 
-            href="https://www.instagram.com/yassine_oujama/"
+            href="#"
             className="box font-medium text-white  flex items-center justify-center flex-col"
           >
-            <RiInstagramFill className=" text-white text-3xl hover:scale-125 cursor-pointer" />
+            <AiFillGithub className=" text-white text-3xl hover:scale-125 cursor-pointer" />
             {/* <p>Instagram</p> */}
           </a>
         </div>
         <div className="sm:text-[12px] text-white">
-          | Copyright &copy; <span>2023 Y4x </span> All rights reserved
+          | Copyright &copy; <span>{year} Y4x </span> All rights reserved
           <a href="#"></a> |
         </div>
       </div>
